@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Premium Online Shopping</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="ShopEase Logo">
+                <h1>ShopEase</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <div class="close-menu">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Premium Products at Affordable Prices</h2>
+            <p>Discover our curated collection of high-quality items</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/product1.jpg" alt="Wireless Headphones">
+                    <h3>Premium Wireless Headphones</h3>
+                    <p class="price">$149.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product2.jpg" alt="Smart Watch">
+                    <h3>Smart Fitness Watch</h3>
+                    <p class="price">$199.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="Bluetooth Speaker">
+                    <h3>Portable Bluetooth Speaker</h3>
+                    <p class="price">$89.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <div class="benefit-item">
+                <i class="fas fa-truck"></i>
+                <h3>Free Shipping</h3>
+                <p>On orders over $50</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-undo"></i>
+                <h3>Easy Returns</h3>
+                <p>30-day return policy</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Payment</h3>
+                <p>100% secure checkout</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Dedicated support</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>ShopEase</h3>
+                <p>Premium online shopping destination for quality products at affordable prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopease.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 ShopEase. All rights reserved.</p>
+        </div>
+    </footer>
+  <script>
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.add('active');
+        });
+
+        document.querySelector('.close-menu').addEventListener('click', function() {
+            document.querySelector('nav').classList.remove('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
