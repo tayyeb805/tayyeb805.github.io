@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere | Real-time Weather Updates</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="weather-app">
+        <header class="app-header">
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-cloud-sun"></i>
+                    <h1>WeatherSphere</h1>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="location-input" placeholder="Search location...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <main class="weather-content">
+            <div class="container">
+                <div class="weather-card">
+                    <div class="location-info">
+                        <h2 id="city-name">--</h2>
+                        <p id="current-date">--</p>
+                    </div>
+                    
+                    <div class="current-weather">
+                        <div class="weather-icon">
+                            <i class="fas fa-question" id="weather-icon"></i>
+                        </div>
+                        <div class="temperature">
+                            <span id="current-temp">--</span>
+                            <span class="unit-switch">
+                                <button id="celsius-btn" class="active">°C</button>
+                                <button id="fahrenheit-btn">°F</button>
+                            </span>
+                        </div>
+                        <div class="weather-desc" id="weather-description">--</div>
+                    </div>
+                    
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fas fa-temperature-high"></i>
+                            <div>
+                                <span>Feels Like</span>
+                                <span id="feels-like">--°</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <div>
+                                <span>Humidity</span>
+                                <span id="humidity">--%</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <div>
+                                <span>Wind</span>
+                                <span id="wind-speed">-- km/h</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-compress-alt"></i>
+                            <div>
+                                <span>Pressure</span>
+                                <span id="pressure">-- hPa</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="location-btn" class="btn">
+                        <i class="fas fa-location-arrow"></i> Use My Location
+                    </button>
+                </div>
+                
+                <div class="forecast-container">
+                    <h3>5-Day Forecast</h3>
+                    <div class="forecast-items" id="forecast-items">
+                        <!-- Forecast items will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        
+        <footer class="app-footer">
+            <div class="container">
+                <p>© <span id="current-year"></span> WeatherSphere. All rights reserved.</p>
+                <p>Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
