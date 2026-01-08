@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Name | Delivering Happiness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f9f9f9; }
+        .bg-primary { background-color: #ffc400; } /* Cheezious Yellow */
+        .text-primary { color: #ffc400; }
+        .bg-dark { background-color: #1a1a1a; }
+        
+        /* Custom Animations */
+        .fade-in { animation: fadeIn 1s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .nav-link:hover { color: #ffc400; border-bottom: 2px solid #ffc400; }
+        .menu-card:hover { transform: scale(1.03); transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sticky-nav { position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <header class="bg-white sticky-nav">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-primary p-2 rounded-full">
+                    <i class="fas fa-pizza-slice text-white text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tighter text-dark">BRAND <span class="text-primary">NAME</span></span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button class="bg-dark text-white px-6 py-2 rounded-full font-bold hover:bg-primary transition duration-300">
+                    ORDER NOW
+                </button>
+                <div class="relative">
+                    <i class="fas fa-shopping-cart text-2xl text-gray-700"></i>
+                    <span class="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full px-1.5 font-bold border-2 border-white">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-gradient h-[500px] flex items-center justify-center text-center text-white px-6">
+        <div class="fade-in">
+            <h1 class="text-5xl md:text-7xl font-black mb-4 uppercase italic">Delivering <br><span class="text-primary">Cheezy</span> Happiness</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">Experience the fastest-growing food brand in your area. Freshly baked, purely local, and served with love.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-primary text-dark px-10 py-4 rounded-full font-black text-xl hover:scale-105 transition transform">VIEW FULL MENU</button>
+                <button class="border-2 border-white text-white px-10 py-4 rounded-full font-black text-xl hover:bg-white hover:text-dark transition">TRACK ORDER</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-primary py-3">
+        <div class="container mx-auto px-6 flex justify-center items-center space-x-4">
+            <i class="fas fa-map-marker-alt text-white animate-bounce"></i>
+            <span class="text-white font-bold">Currently serving at: <span class="underline">YOUR LOCATION HERE</span></span>
+            <button class="bg-white text-primary text-xs px-3 py-1 rounded-full font-bold uppercase">Change</button>
+        </div>
+    </div>
+
+    <section class="py-16 container mx-auto px-6">
+        <h2 class="text-3xl font-extrabold mb-10 border-l-8 border-primary pl-4">EXPLORE CATEGORIES</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="menu-card bg-white p-6 rounded-3xl text-center shadow-sm cursor-pointer border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=200&h=200&auto=format&fit=crop" class="w-24 h-24 mx-auto rounded-full object-cover mb-4 ring-4 ring-primary" alt="Pizza">
+                <h3 class="font-bold text-lg">Special Pizza</h3>
+            </div>
+            <div class="menu-card bg-white p-6 rounded-3xl text-center shadow-sm cursor-pointer border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=200&h=200&auto=format&fit=crop" class="w-24 h-24 mx-auto rounded-full object-cover mb-4" alt="Burgers">
+                <h3 class="font-bold text-lg">Burgerz</h3>
+            </div>
+            <div class="menu-card bg-white p-6 rounded-3xl text-center shadow-sm cursor-pointer border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=200&h=200&auto=format&fit=crop" class="w-24 h-24 mx-auto rounded-full object-cover mb-4" alt="Pasta">
+                <h3 class="font-bold text-lg">Pastas</h3>
+            </div>
+            <div class="menu-card bg-white p-6 rounded-3xl text-center shadow-sm cursor-pointer border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7bb7445?q=80&w=200&h=200&auto=format&fit=crop" class="w-24 h-24 mx-auto rounded-full object-cover mb-4" alt="Sides">
+                <h3 class="font-bold text-lg">Side Orders</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-extrabold mb-10 border-l-8 border-primary pl-4 uppercase">Popular Picks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=500&h=350&fit=crop" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500" alt="Pizza">
+                        <span class="absolute top-4 left-4 bg-red-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase">Best Seller</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Crown Crust Pizza</h3>
+                            <span class="text-primary font-black text-xl">$12.00</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">A unique crown-shaped crust filled with cheese and topped with grilled chicken and veggies.</p>
+                        <button class="w-full bg-primary text-white py-3 rounded-xl font-bold hover:bg-dark transition flex items-center justify-center space-x-2">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>ADD TO CART</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=500&h=350&fit=crop" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500" alt="Burger">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Bazinga Burger</h3>
+                            <span class="text-primary font-black text-xl">$6.50</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Double patty crispy chicken burger with signature sauce and fresh lettuce.</p>
+                        <button class="w-full bg-primary text-white py-3 rounded-xl font-bold hover:bg-dark transition flex items-center justify-center space-x-2">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>ADD TO CART</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=500&h=350&fit=crop" class="w-full h-56 object-cover group-hover:scale-110 transition duration-500" alt="Pasta">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Alfredo Pasta</h3>
+                            <span class="text-primary font-black text-xl">$9.00</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Creamy white sauce pasta with grilled chicken chunks and parmesan cheese.</p>
+                        <button class="w-full bg-primary text-white py-3 rounded-xl font-bold hover:bg-dark transition flex items-center justify-center space-x-2">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>ADD TO CART</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-gray-800 pb-12">
+            <div class="col-span-1 md:col-span-1">
+                <span class="text-3xl font-extrabold tracking-tighter text-white">BRAND <span class="text-primary">NAME</span></span>
+                <p class="mt-4 text-gray-400 text-sm leading-relaxed">The Awami Brand that's all about local love and delivering cheezy khushiyan to your doorstep.</p>
+                <div class="flex space-x-4 mt-6">
+                    <a href="#" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-primary transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-primary transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-primary transition"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-lg mb-6 uppercase">Quick Links</h4>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-primary">Our Menu</a></li>
+                    <li><a href="#" class="hover:text-primary">Branch Locator</a></li>
+                    <li><a href="#" class="hover:text-primary">Careers</a></li>
+                    <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-6 uppercase">Contact Us</h4>
+                <ul class="space-y-3 text-gray-400">
+                    <li class="flex items-center space-x-3"><i class="fas fa-phone text-primary"></i> <span>+00 123 456 7890</span></li>
+                    <li class="flex items-center space-x-3"><i class="fas fa-envelope text-primary"></i> <span>hello@yourbrand.com</span></li>
+                    <li class="flex items-center space-x-3"><i class="fas fa-headset text-primary"></i> <span>24/7 Support</span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-6 uppercase">Newsletter</h4>
+                <p class="text-gray-400 text-sm mb-4">Subscribe to get latest deals and offers.</p>
+                <div class="flex overflow-hidden rounded-lg">
+                    <input type="email" placeholder="Email Address" class="bg-gray-800 border-none px-4 py-2 w-full text-white focus:ring-1 focus:ring-primary">
+                    <button class="bg-primary px-4 py-2 text-dark font-bold">JOIN</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-6 mt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
+            <p>&copy; 2024 Your Brand Name. All Rights Reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <span>TERMS & CONDITIONS</span>
+                <span>PRIVACY POLICY</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-3 z-50 shadow-2xl">
+        <div class="text-primary flex flex-col items-center">
+            <i class="fas fa-home"></i>
+            <span class="text-[10px] font-bold">Home</span>
+        </div>
+        <div class="text-gray-400 flex flex-col items-center">
+            <i class="fas fa-utensils"></i>
+            <span class="text-[10px]">Menu</span>
+        </div>
+        <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center -mt-8 border-4 border-white">
+            <i class="fas fa-shopping-basket"></i>
+        </div>
+        <div class="text-gray-400 flex flex-col items-center">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="text-[10px]">Outlets</span>
+        </div>
+        <div class="text-gray-400 flex flex-col items-center">
+            <i class="fas fa-user"></i>
+            <span class="text-[10px]">Profile</span>
+        </div>
+    </div>
+
+</body>
+</html>

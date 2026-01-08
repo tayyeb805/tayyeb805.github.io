@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations | Your Brand Name</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f3f4f6; }
+        .bg-primary { background-color: #ffc400; }
+        .text-primary { color: #ffc400; }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-2xl font-extrabold">BRAND <span class="text-primary">NAME</span></span>
+            <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
+                <a href="index.html" class="hover:text-primary">Home</a>
+                <a href="menu.html" class="hover:text-primary">Menu</a>
+                <a href="locations.html" class="text-primary">Locations</a>
+                <a href="contact.html" class="hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl font-black mb-2 text-center">OUR OUTLETS</h1>
+            <p class="text-center text-gray-500 mb-12">Find your nearest Brand Name branch and enjoy the heat!</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="space-y-4 max-h-[600px] overflow-y-auto pr-4">
+                    <div class="bg-white p-6 rounded-2xl border-l-8 border-primary shadow-sm hover:shadow-md transition">
+                        <h3 class="text-xl font-bold">Downtown Branch</h3>
+                        <p class="text-gray-500 text-sm mt-1">123 Food Street, City Center, Your City</p>
+                        <div class="mt-4 flex space-x-4">
+                            <span class="text-xs font-bold text-green-600 bg-green-100 px-3 py-1 rounded-full uppercase">Open Now</span>
+                            <span class="text-xs font-bold text-gray-400">Dine-in · Takeaway · Delivery</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl border-l-8 border-gray-300 shadow-sm opacity-70">
+                        <h3 class="text-xl font-bold">Westside Mall</h3>
+                        <p class="text-gray-500 text-sm mt-1">Food Court Level 2, Westside Shopping Mall</p>
+                        <div class="mt-4 flex space-x-4">
+                            <span class="text-xs font-bold text-red-600 bg-red-100 px-3 py-1 rounded-full uppercase">Opening Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-200 rounded-3xl h-[400px] lg:h-full flex items-center justify-center overflow-hidden">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-6xl text-gray-400 mb-4"></i>
+                        <p class="text-gray-500 font-bold uppercase tracking-widest">Map Interface Placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
